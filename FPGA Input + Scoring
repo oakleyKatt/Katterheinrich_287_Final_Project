@@ -1,0 +1,13 @@
+FPGA Input Legend:
+(SW17) rst
+(SW16) restart: hard restart that begins a new game regardless of win/loss status, game won’t start until switch it turned off
+(SW15) player_pause: switch on for game to run/play, switch off to pause game
+(SW14) player_new_game: on- new game will start immediately after a win/loss. I recommend leaving it off until a win/loss occurs then flip it on and off, but you do you. I am not responsible for any chronic finger cramps resulting from marathon brick breaking binges. 
+(KEY1) player bar moves left
+(KEY0) player bar moves right
+
+Scoring: 
+Scores are stored in a register, each row has it’s own register with specific inputs and outputs. Score is displayed on the 7-segment displays (HEX5 and HEX4)
+Row0: red bricks, worth 3-points
+Row1: green bricks, worth 2-points
+Row2: blue bricks, worth 1-point
